@@ -146,5 +146,34 @@ button {
 }
 
 .secImg img {
-    width: 30vw;
+    width: 34vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.faqbox {
+    display: flex;
+    background-color: grey;
+    padding: 34px;
+
 }
