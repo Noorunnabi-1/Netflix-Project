@@ -4,19 +4,23 @@
 
 }
 
+body {
+    background-color: black;
+}
+
 .main {
     background-image: url("header-image.png");
     background-position: center center;
-    height: 80vh;
+    height: 90vh;
     position: relative;
     background-repeat: no-repeat;
     /* background-size: max(1200px, 80vw); */
 }
 
 .main .box {
-    height: 80vh;
+    height: 90vh;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.6;
     background-color: black;
     position: absolute;
     top: 0;
@@ -26,7 +30,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 80vw;
+    max-width: 70vw;
     margin: auto;
     height: 62px;
 }
@@ -41,4 +45,106 @@ span img {
 button {
     position: relative;
     z-index: 10;
+}
+
+.hero {
+    font-family: sans-serif;
+    color: #fff;
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+    /* padding-top-bottom : 0px  */
+}
+
+.hero> :first-child {
+    /*   first child.  > its mean immediate first child and so on*/
+    font-family: "poppins", sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    /*   second child */
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    /*   third child */
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sepLine {
+    height: 7px;
+    background-color: rgb(43, 41, 41);
+}
+
+.btn {
+    font-family: "poppins", sans-serif;
+    font-weight: 400px;
+    padding: 3px 8px;
+    background-color: rgba(23, 23, 23, 0.6);
+    color: #fff;
+    border: 1px solid rgba(246, 238, 238, 0.4);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    padding: 11px 42px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+
+}
+
+.hero-buttons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.main input {
+    padding: 13px 84px 14px 9px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.6);
+    border: 1px solid rgba(246, 238, 238, 0.4);
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: #fff;
+
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
 }
