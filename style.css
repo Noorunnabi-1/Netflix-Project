@@ -8,6 +8,7 @@ body {
     background-color: black;
 }
 
+
 .main {
     background-image: url("header-image.png");
     background-position: center center;
@@ -41,6 +42,13 @@ span img {
     position: relative;
     z-index: 10;
 }
+
+/* .first.third img {
+    height: 300px;
+    width: 500px;
+    padding-top: 40px;
+    margin-right: 60px;
+} */
 
 button {
     position: relative;
@@ -141,7 +149,7 @@ button {
     align-items: center;
     justify-content: center;
     max-width: 70vw;
-    margin: auto;
+    margin: 130px;
     color: #fff;
 
 }
@@ -199,12 +207,33 @@ section.first>div :nth-child(2) {
     /* font-weight: 100; */
 }
 
+.faqbox:hover {
+    background-color: #414141;
+    /* transition: all 0.5s ease-out; */
+}
+
 .faqbox {
+    transition: all 0.5s ease-out;
+
     display: flex;
     justify-content: space-between;
-    background-color: #373636;
+    background-color: #2d2d2d;
     padding: 24px;
     max-width: 70vw;
     margin: 10px auto;
     cursor: pointer;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+
 }
