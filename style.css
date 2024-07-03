@@ -131,6 +131,11 @@ button {
     border: 1px solid rgba(246, 238, 238, 0.4);
 }
 
+/* section {
+    height: 100px;
+    width: 100px;
+} */
+
 .first {
     display: flex;
     align-items: center;
@@ -146,15 +151,24 @@ button {
 }
 
 .secImg img {
-    width: 34vw;
+    width: 400px;
+
+
+
+    /* width: 34vw; */
     position: relative;
     z-index: 10;
 }
 
 .secImg video {
+    width: 293px;
+    top: 62px;
+    left: 53px;
+
+
     position: absolute;
-    top: 51px;
-    right: 0;
+    /* top: 51px;
+    right: 0; */
 }
 
 section.first>div {
@@ -171,9 +185,26 @@ section.first>div :nth-child(2) {
     font-size: 24px;
 }
 
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    font-family: "poppins", sans-serif;
+    background: black;
+    color: #fff;
+    padding: 34px;
+    font-size: 24px;
+    /* font-weight: 100; */
+}
+
 .faqbox {
     display: flex;
-    background-color: grey;
-    padding: 34px;
-
+    justify-content: space-between;
+    background-color: #373636;
+    padding: 24px;
+    max-width: 70vw;
+    margin: 10px auto;
+    cursor: pointer;
 }
